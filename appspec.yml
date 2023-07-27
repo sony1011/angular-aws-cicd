@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: s3://codepipeline-us-west-2-598491907540/DemoPipeline1/BuildArtif/hwh7shJ
+  - source: /
     destination: /var/www/html
 hooks:
   BeforeInstall:
