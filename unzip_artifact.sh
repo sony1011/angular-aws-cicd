@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the location where the zip file is stored
-cp s3://codepipeline-us-west-2-598491907540/SamplePipelineDemo/*.zip /tmp
+cp s3://codepipeline-us-west-2-598491907540/SamplePipelineDemo/BuildArtif/*.zip /tmp
 cd /tmp
 
 # Unzip the artifact
