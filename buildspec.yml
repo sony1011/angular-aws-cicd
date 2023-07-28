@@ -13,6 +13,10 @@ phases:
     commands:
         - echo Build started 
         - ng build
+  post_build:
+    commands:
+      - echo "Unzipping artifacts..."
+      - unzip -q 'dist*' -d /tmp
 artifacts:
     files:
         - '**/*'
