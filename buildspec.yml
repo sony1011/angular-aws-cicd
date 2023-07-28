@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo "Unzipping artifacts..."
-      - unzip -q 'dist*' -d /tmp
+     #  unzip -q 
 artifacts:
     files:
         - '**/*'
