@@ -6,11 +6,11 @@ files:
 file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
-    - location: /unzip_artifact.sh
+    - location: scripts/stop_apache_server.sh
       timeout: 300
       runas: root
       
   AfterInstall:
-    - location: /after_script.sh
+    - location: scripts/start_apache_server.sh
       timeout: 300
       runas: root
